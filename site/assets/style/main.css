@@ -39,11 +39,11 @@ footer p {
     padding-top: 14px;
     padding-bottom: 14px;
 }
-.arrow-icon {
+.arrowIcon {
     width: 70px;
     border-radius: 80px;
 }
-.arrow-icon:hover {
+.arrowIcon:hover {
     -webkit-filter: drop-shadow(3px 3px 3px #29292960);
     filter: drop-shadow(3px 3px 3px  #29292960);
 }
