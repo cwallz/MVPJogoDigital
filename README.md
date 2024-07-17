@@ -3,7 +3,7 @@
 
 ### Navegação pelas páginas do projeto
 Basta acessar o link abaixo: 
-https://cwallz.github.io/MVP-jogoDigital/site/index.html
+https://cwallz.github.io/MVPJogoDigital/site/index.html
 
 ---
 
