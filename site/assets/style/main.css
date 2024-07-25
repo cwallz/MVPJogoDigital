@@ -190,3 +190,32 @@ tbody tr:nth-child(even) {
     bottom:0%;
     line-height: auto;
 }
+#speakButton img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+#speakButton:hover {
+    -webkit-filter: drop-shadow(3px 3px 3px #29292960);
+    filter: drop-shadow(3px 3px 3px  #29292960);
+}
+.mascote {
+    width: 70px;
+    border-radius: 80px;
+}
+.mascote:hover {
+    -webkit-filter: drop-shadow(3px 3px 3px #29292960);
+    filter: drop-shadow(3px 3px 3px  #29292960);
+}
+#balloon {
+    position: absolute;
+    top: -40px;
+    left: 510px;
+    width: 200px;
+    height: auto;
+    display: none;
+    transition-duration: 5s;
+}
+.spacing-mascote > *:not(:last-child) {
+    margin-right: 3mm;
+}

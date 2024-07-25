@@ -227,4 +227,18 @@
 			alert('Seu navegador não suporta a síntese de voz.');
 		}
 	});
+	document.getElementById('mascote').addEventListener('click', function() {
+		var balloon = document.getElementById('balloon');
+		balloon.style.display = 'block';
+		setTimeout(function() {
+		  balloon.style.display = 'none';
+		}, 3000);
+
+		if ('speechSynthesis' in window) {
+			var utterance = new SpeechSynthesisUtterance("Digite algo para eu ler para você, pruuu!");
+			window.speechSynthesis.speak(utterance);
+		  } else {
+			alert('Seu navegador não suporta a síntese de voz.');
+		}
+	});
 }());

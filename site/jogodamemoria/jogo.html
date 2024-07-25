@@ -2,8 +2,6 @@
 <html lang="pt-br">
   <head>
     <meta charset="UFT-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../assets/style/main.css" />
@@ -32,66 +30,72 @@
     <main>
       <div>
         <div>
-            <input type="text" id="textToSpeak" placeholder="Digite algo para falar">
-            <button id="speakButton">Clique para ouvir a voz</button>
-        </div>
-        <div>
           <h2 class="titulo-aba d-flex justify-content-center pt-3 pb-2"> Jogo da memória</h2>
         </div>
-        <div id="game">
-          <div class="card" id="card0">
-            <div class="face back"></div>
-            <div class="face front"></div>
+        <div>
+          <div id="game">
+            <div class="card" id="card0">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card1">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card2">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card3">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card4">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card5">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card6">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card7">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card8">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card9">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card10">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="card" id="card11">
+              <div class="face back"></div>
+              <div class="face front"></div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+              <img id="match" src="../assets/img/par.png" class="img-fluid" />
+            </div>
+            <div class="container-fluid d-flex justify-content-center align-items-center vh-100" id="fimDeJogo">
+              <img id="imgFimDeJogo" src="../assets/img/muitoBem.png" class="img-fluid" />
+            </div>
           </div>
-          <div class="card" id="card1">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card2">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card3">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card4">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card5">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card6">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card7">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card8">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card9">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card10">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="card" id="card11">
-            <div class="face back"></div>
-            <div class="face front"></div>
-          </div>
-          <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
-            <img id="match" src="../assets/img/par.png" class="img-fluid" />
-          </div>
-          <div class="container-fluid d-flex justify-content-center align-items-center vh-100" id="fimDeJogo">
-            <img id="imgFimDeJogo" src="../assets/img/muitoBem.png" class="img-fluid" />
+          <div class="titulo-aba d-flex justify-content-center position-relative spacing-mascote align-items-center pt-2 pb-4">
+            <img class="mascote" src="../assets/img/mascote5.png" id="mascote"/>
+            <img class="balloon" src="../assets/img/balao00.png" id="balloon" alt="Digite algo para falar, pru!"/>
+            <input type="text" id="textToSpeak" placeholder="Digite algo para falar">
+            <a href="#" id="speakButton">
+                <img src="../assets/img/botaoAudio.png" alt="Clique para ouvir a voz">
+            </a>
           </div>
         </div>
       </div>
