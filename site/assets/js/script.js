@@ -173,13 +173,16 @@
 		var matchSound = document.getElementById("matchSound");
 		matchSound.play();
 
-		// usa a síntese de voz para dizer "par!"
-		if ('speechSynthesis' in window) {
-			var utterance = new SpeechSynthesisUtterance("par!");
-			window.speechSynthesis.speak(utterance);
-		} else {
-			alert('Seu navegador não suporta a síntese de voz.');
-		}
+		// Usa setTimeout para esperar 1 segundo antes de usar a síntese de voz
+		setTimeout(function() {
+			// usa a síntese de voz para dizer "par!"
+			if ('speechSynthesis' in window) {
+				var utterance = new SpeechSynthesisUtterance("par!");
+				window.speechSynthesis.speak(utterance);
+			} else {
+				alert('Seu navegador não suporta a síntese de voz.');
+			}
+		}, 500); // Espera milisegundos)
 
 		//função executada após 1.5 segundo
 		setTimeout(function(){
@@ -203,14 +206,17 @@
 		var applauseSound = document.getElementById("applauseSound");
 		applauseSound.volume = 0.5; // Define o volume para 50%
 		applauseSound.play();
-	
-		// usa a síntese de voz para dizer "Muito bem! Clique para jogar de novo!"
-		if ('speechSynthesis' in window) {
-			var utterance = new SpeechSynthesisUtterance("Muito bem! Clique para jogar de novo!");
-			window.speechSynthesis.speak(utterance);
-		} else {
-			alert('Seu navegador não suporta a síntese de voz.');
-		}
+		
+		// Usa setTimeout para esperar 1 segundo antes de usar a síntese de voz
+		setTimeout(function() {
+			// usa a síntese de voz para dizer "Muito bem! Clique para jogar de novo!"
+			if ('speechSynthesis' in window) {
+				var utterance = new SpeechSynthesisUtterance("Muito bem! Clique para jogar de novo!");
+				window.speechSynthesis.speak(utterance);
+			} else {
+				alert('Seu navegador não suporta a síntese de voz.');
+			}
+		}, 2000); // Espera milissegundos
 
 		//adiciona o evento click à imagem de game over
 		modal.addEventListener('click',function(){
